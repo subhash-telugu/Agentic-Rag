@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+langgraph
+langchain
+python-dotenv
+langchain-groq
+faiss-cpu
+langchain_core
+langchain_community
+langchain_huggingface
+pypdf
