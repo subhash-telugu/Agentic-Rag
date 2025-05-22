@@ -31,11 +31,10 @@ This project is part of an assignment to build a robust RAG system and extend it
 * **Contextual Generation:** Generates precise answers based on the retrieved context.
 * **API Endpoints:** Provides a set of FastAPI endpoints for seamless interaction.
 
-## Project Structure
-
+<details>
+  <summary>Project Structure</summary>
 The core logic of the application resides within the `src` directory. Here's a breakdown of the key files and folders:
-
-src/
+  src/
 ├── llmUtils/
 │   ├── init.py
 │   └── llm.py            # Contains LLM initialization and related utilities (e.g., Groq client)
@@ -50,7 +49,7 @@ src/
 ├── .gitignore            # Specifies intentionally untracked files to ignore
 ├── app.py                # Main FastAPI application entry point
 └── requirements.txt      # Lists project dependencies
-
+</details>
 
 ## LangGraph Flow
 
