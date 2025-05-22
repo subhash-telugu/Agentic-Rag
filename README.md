@@ -110,7 +110,7 @@ The application will typically be accessible at http://127.0.0.1:8000. You can i
 Endpoints
 /upload:
 ![image](https://github.com/user-attachments/assets/528c1983-a040-4198-bd63-672b96486b05)
-```bash
+
 Method: POST
 Description: Allows uploading a PDF file for processing and indexing into the VectorDB.
 Example (Swagger UI):
@@ -118,12 +118,12 @@ Navigate to http://127.0.0.1:8000/docs.
 Find the /upload endpoint and click "Try it out".
 Choose your PDF file and click "Execute".
 Sample Response:
-```
+
 
 Endpoints
 /ask:
 ![image](https://github.com/user-attachments/assets/ce7e3eef-1520-4869-bd43-6da65b0b02fe)
-```bash
+
 Method: POST
 Description: Submits a question to the system. The agent processes the query using the RAG flow, potentially involving retrieval and generation.
 Parameters: question (string)
@@ -133,4 +133,4 @@ Find the /ask endpoint and click "Try it out".
 Enter your question (e.g., "How did he greet the audience at the Parliament?").
 Click "Execute".
 Sample Response:
-```
+
