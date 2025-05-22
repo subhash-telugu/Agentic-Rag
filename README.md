@@ -74,7 +74,7 @@ The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/subhash-telugu/Agentic-Rag.git](https://github.com/subhash-telugu/Agentic-Rag.git)
+    git clone https://github.com/subhash-telugu/Agentic-Rag.git
     cd Agentic-Rag
     ```
 
@@ -90,7 +90,7 @@ The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below 
     ```
 
 4.  **Set up environment variables:**
-    Create a `.env` file in the root of your project directory and add your Groq API key:
+    Update the `.env` file in the root of your project directory and add your Groq API key:
     ```
     GROQ_API_KEY="your_groq_api_key_here"
     ```
