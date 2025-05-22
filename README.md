@@ -33,23 +33,26 @@ This project is part of an assignment to build a robust RAG system and extend it
 
 ## Project Structure
 
-The core logic of the application resides within the `src` directory. Here's a breakdown of the key files and folders:
 ```bash
 src/
-├── llmUtils/
-│   ├── init.py
-│   └── llm.py            # Contains LLM initialization and related utilities (e.g., Groq client)
-├── init.py
-├── agent.py              # Defines the main agent logic
-├── flow.py               # Defines the LangGraph flow and its nodes/edges
-├── generate.py           # Handles response generation based on retrieved context
-├── grade.py              # (Optional) For grading or evaluating retrieved documents/responses
-├── graphstate.py         # Defines the state object passed through the LangGraph
-├── retriever.py          # Handles document retrieval logic (e.g., from VectorDB)
-├── rewrite.py            # Handles query rewriting logic based on agent's decision
-├── .gitignore            # Specifies intentionally untracked files to ignore
-├── app.py                # Main FastAPI application entry point
-└── requirements.txt      # Lists project dependencies
+│
+├── agent.py              # Agent logic (core decision-making node)
+├── flow.py               # Constructs and compiles the LangGraph workflow
+├── generate.py           # Final generation node logic
+├── grade.py              # Grader logic to choose between rewrite/generate
+├── graphstate.py         # Defines the LangGraph state class
+├── retriever.py          # Retrieves external content using a tool node
+├── rewrite.py            # Rewrites the retrieved content for clarity or improvement
+│
+├── llmUtils/             # Utilities for LLM operations
+│   ├── __init__.py
+│   └── llm.py            # Helper methods for LLM calls or prompts
+│
+app.py                    # Entry script to initialize and run the LangGraph
+requirements.txt          # Python package dependencies
+.env                      # Environment variables (e.g., GROQ_API_KEY)
+.gitignore                # Git ignored files (should include __pycache__, .env, etc.)
+
 ```
 
 ## LangGraph Flow
