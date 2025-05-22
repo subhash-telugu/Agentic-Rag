@@ -59,7 +59,8 @@ requirements.txt          # Python package dependencies
 
 The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below is a diagram illustrating the interaction between different components, showcasing the decision-making process of the agent:
 
-![LangGraph Flow Diagram](image_20d1aa.png)
+![LangGraph Flow Diagram]![image](https://github.com/user-attachments/assets/c92a5af1-378a-44d4-8ec6-b1820a87b74c)
+
 
 **_Explanation of the Flow:_**
 * **Start:** The process initiates with a user query.
@@ -100,14 +101,15 @@ The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below 
 ### Running the Application
 
 To start the FastAPI server:
+![image](https://github.com/user-attachments/assets/528c1983-a040-4198-bd63-672b96486b05)
 
-```bash
+
 uvicorn src.app:app --reload
 The application will typically be accessible at http://127.0.0.1:8000. You can interact with the API endpoints via a tool like Postman or through the automatically generated Swagger UI available at http://127.0.0.1:8000/docs.
 
 Endpoints
 /upload:
-
+```bash
 Method: POST
 Description: Allows uploading a PDF file for processing and indexing into the VectorDB.
 Example (Swagger UI):
@@ -115,8 +117,11 @@ Navigate to http://127.0.0.1:8000/docs.
 Find the /upload endpoint and click "Try it out".
 Choose your PDF file and click "Execute".
 Sample Response:
-/ask:
+```
+![image](https://github.com/user-attachments/assets/ce7e3eef-1520-4869-bd43-6da65b0b02fe)
 
+/ask:
+```bash
 Method: POST
 Description: Submits a question to the system. The agent processes the query using the RAG flow, potentially involving retrieval and generation.
 Parameters: question (string)
@@ -126,3 +131,4 @@ Find the /ask endpoint and click "Try it out".
 Enter your question (e.g., "How did he greet the audience at the Parliament?").
 Click "Execute".
 Sample Response:
+```
