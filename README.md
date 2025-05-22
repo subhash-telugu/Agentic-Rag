@@ -59,7 +59,7 @@ requirements.txt          # Python package dependencies
 
 The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below is a diagram illustrating the interaction between different components, showcasing the decision-making process of the agent:
 
-![LangGraph Flow Diagram]![image](https://github.com/user-attachments/assets/c92a5af1-378a-44d4-8ec6-b1820a87b74c)
+![image](https://github.com/user-attachments/assets/c92a5af1-378a-44d4-8ec6-b1820a87b74c)
 
 
 **_Explanation of the Flow:_**
