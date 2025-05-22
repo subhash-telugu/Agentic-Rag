@@ -9,9 +9,6 @@ def generator(state:State):
 
     llm = get_llm() 
     print("LLM initialized successfully")
-  
-
-   
 
     template="""Answer the following based on the following context.
     think step by step before providing a detailed answer
