@@ -101,7 +101,7 @@ The Agentic RAG system follows a specific flow orchestrated by LangGraph. Below 
 ### Running the Application
 
 To start the FastAPI server:
-![image](https://github.com/user-attachments/assets/528c1983-a040-4198-bd63-672b96486b05)
+
 
 
 uvicorn src.app:app --reload
@@ -109,6 +109,7 @@ The application will typically be accessible at http://127.0.0.1:8000. You can i
 
 Endpoints
 /upload:
+![image](https://github.com/user-attachments/assets/528c1983-a040-4198-bd63-672b96486b05)
 ```bash
 Method: POST
 Description: Allows uploading a PDF file for processing and indexing into the VectorDB.
@@ -118,9 +119,10 @@ Find the /upload endpoint and click "Try it out".
 Choose your PDF file and click "Execute".
 Sample Response:
 ```
-![image](https://github.com/user-attachments/assets/ce7e3eef-1520-4869-bd43-6da65b0b02fe)
 
+Endpoints
 /ask:
+![image](https://github.com/user-attachments/assets/ce7e3eef-1520-4869-bd43-6da65b0b02fe)
 ```bash
 Method: POST
 Description: Submits a question to the system. The agent processes the query using the RAG flow, potentially involving retrieval and generation.
